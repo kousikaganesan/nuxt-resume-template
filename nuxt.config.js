@@ -6,8 +6,8 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    titleTemplate: 'Kousika Ganesan',
+    title: 'Kousika Ganesan',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,7 +17,13 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: '',
+        href: 'https://fonts.googleapis.com/css2?family=Work+Sans&display=swap'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -30,7 +36,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/typed.js', ssr: false }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -47,7 +53,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@neneos/nuxt-animate.css'
   ],
   /*
    ** Axios module configuration
@@ -59,7 +66,7 @@ export default {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ['~/assets/scss/main.scss'],
     theme: {
       dark: true,
       themes: {
@@ -73,7 +80,8 @@ export default {
           success: colors.green.accent3
         }
       }
-    }
+    },
+    treeShake: true
   },
   /*
    ** Build configuration
