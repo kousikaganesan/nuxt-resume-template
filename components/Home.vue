@@ -16,31 +16,31 @@
         </div>
       </vue-typed-js>
     </div>
-    <!-- <img src="@/assets/images/scroll.gif" class="scroll-gif" /> -->
     <img
-      src="@/assets/images/rect.png"
+      src="@/assets/images/object-1.svg"
       class="rellax object-1"
       data-rellax-speed="7"
       data-rellax-percentage="0.5"
     />
     <img
-      src="@/assets/images/rect.png"
+      src="@/assets/images/Mobile.png"
       class="rellax object-2"
       data-rellax-speed="7"
       data-rellax-percentage="0.5"
     />
     <img
-      src="@/assets/images/rect.png"
+      src="@/assets/images/Glasses.png"
       class="rellax object-3"
       data-rellax-speed="7"
       data-rellax-percentage="0.5"
     />
     <img
-      src="@/assets/images/rect.png"
+      src="@/assets/images/Laptop.png"
       class="rellax object-4"
       data-rellax-speed="7"
       data-rellax-percentage="0.5"
     />
+    <img src="@/assets/images/scroll.gif" class="scroll-gif" />
   </v-container>
 </template>
 
@@ -67,6 +67,8 @@ export default {
   }
   .scroll-gif {
     height: 6rem;
+    position: absolute;
+    bottom: 0;
   }
   .banner-text {
     font-size: 1.5rem;
@@ -83,30 +85,27 @@ export default {
     margin-bottom: 1rem;
   }
   .object-1 {
-    // height: 5rem;
-    // width: 5rem;
-    // background-color: #00f1c9;
-    // border-radius: 12px;
-    // transform: rotateY(0deg) rotate(45deg);
     position: absolute;
-    top: 30rem;
-    left: 3rem;
+    top: 0rem;
+    left: 13rem;
     z-index: 0;
   }
   .object-2 {
     @extend .object-1;
-    top: 50rem;
+    top: 21rem;
     left: 10rem;
+    width: 100px;
   }
   .object-3 {
     @extend .object-1;
-    top: 60rem;
-    left: 30rem;
+    top: 20rem;
+    left: 46rem;
   }
   .object-4 {
     @extend .object-1;
-    top: 70rem;
-    left: 50rem;
+    top: 0rem;
+    left: 44rem;
+    height: 304px;
   }
 }
 </style>
