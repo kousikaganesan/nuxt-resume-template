@@ -20,7 +20,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        rel: '',
+        rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Work+Sans&display=swap'
       }
     ]
@@ -32,11 +32,14 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['aos/dist/aos.css'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/typed.js', ssr: false }],
+  plugins: [
+    { src: '~/plugins/typed', ssr: false },
+    { src: '~/plugins/aos', ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -77,11 +80,11 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
+          background: '#222222'
         }
       }
-    },
-    treeShake: true
+    }
   },
   /*
    ** Build configuration

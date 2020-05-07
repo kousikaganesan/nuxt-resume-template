@@ -4,26 +4,31 @@
       <img
         v-if="data.length === 5"
         class="close"
+        data-aos="slide-right"
         src="@/assets/images/close.svg"
         @click="toggleMenu"
       />
       <ul class="menu-item">
         <li
           v-for="item in data"
-          :key="item"
-          class="fadeInLeft d-flex justify-center align-center"
+          :key="item.name"
+          data-aos="slide-right"
+          class="d-flex justify-center align-center"
         >
           <div>
             <div class="text-uppercase name text-center">{{ item.name }}</div>
-            <div class="tag text-center">- {{ item.tagLine }}</div>
+            <div class="fade-up tag text-center">- {{ item.tagLine }}</div>
           </div>
         </li>
       </ul>
     </div>
-    <div v-else class="d-flex justify-space-between">
-      <div>Kousika Ganesan</div>
-
-      <img class="menu" src="@/assets/images/menu.svg" @click="toggleMenu" />
+    <div v-else class="d-flex justify-end">
+      <img
+        class="menu"
+        data-aos="fade"
+        src="@/assets/images/menu.svg"
+        @click="toggleMenu"
+      />
     </div>
   </div>
 </template>
@@ -35,11 +40,11 @@ export default {
       isMenuOpen: false,
       data: [],
       items: [
-        { name: 'Home', tagLine: 'The beginning' },
-        { name: 'About', tagLine: 'Curious ?' },
-        { name: 'Skills', tagLine: 'I got game' },
-        { name: 'Works', tagLine: 'Only the finest' },
-        { name: 'Contact', tagLine: "Don't hesitate" }
+        { name: 'Home', tagLine: 'The beginning!' },
+        { name: 'About', tagLine: 'Curious?' },
+        { name: 'Skills', tagLine: 'I got game!' },
+        { name: 'Works', tagLine: 'Only the finest!' },
+        { name: 'Contact', tagLine: "Don't hesitate!" }
       ]
     }
   },
@@ -52,7 +57,7 @@ export default {
         this.items.map((item, index) => {
           setTimeout(() => {
             this.data.push(item)
-          }, 70 * index)
+          }, 100 * index)
         })
       }
     }
@@ -74,6 +79,7 @@ export default {
     position: fixed;
     right: 1.5rem;
     cursor: pointer;
+    z-index: 6;
   }
   .menu-item {
     list-style: none;
@@ -110,14 +116,21 @@ export default {
         background-color: #999999;
       }
       .tag {
+        font-style: italic;
+        padding: 0 0.5rem;
+        font-size: 0.85rem;
         visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 0.5s, opacity 0.5s linear;
       }
       &:hover {
         .tag {
           visibility: visible;
           font-style: italic;
           padding: 0 0.5rem;
-          font-size: 0.75rem;
+          font-size: 0.85rem;
+          opacity: 1;
+          transition: opacity 0.5s linear;
         }
       }
     }
