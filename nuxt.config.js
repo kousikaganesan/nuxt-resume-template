@@ -21,7 +21,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Work+Sans&display=swap'
+        href:
+          'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap'
       }
     ]
   },
@@ -38,7 +39,8 @@ export default {
    */
   plugins: [
     { src: '~/plugins/typed', ssr: false },
-    { src: '~/plugins/aos', ssr: false }
+    { src: '~/plugins/aos', ssr: false },
+    { src: '~/plugins/vue-waypoint', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -57,7 +59,8 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    '@neneos/nuxt-animate.css'
+    '@neneos/nuxt-animate.css',
+    'vue-scrollto/nuxt'
   ],
   /*
    ** Axios module configuration
@@ -81,7 +84,7 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-          background: '#222222'
+          background: '#232020'
         }
       }
     }

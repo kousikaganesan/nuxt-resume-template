@@ -1,1 +1,13 @@
 @import '~/assets/scss/_variables.scss';
+
+.section-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.container {
+    padding: 0;
+}
