@@ -15,10 +15,10 @@
           data-aos="slide-right"
           class="d-flex justify-center align-center"
         >
-          <div>
+          <a @click.prevent="navigateTo(item.name)">
             <div class="text-uppercase name text-center">{{ item.name }}</div>
             <div class="fade-up tag text-center">- {{ item.tagLine }}</div>
-          </div>
+          </a>
         </li>
       </ul>
     </div>
@@ -34,18 +34,14 @@
 </template>
 
 <script>
+import Constants from '@/constants'
+
 export default {
   data() {
     return {
       isMenuOpen: false,
       data: [],
-      items: [
-        { name: 'Home', tagLine: 'The beginning!' },
-        { name: 'About', tagLine: 'Curious?' },
-        { name: 'Skills', tagLine: 'I got game!' },
-        { name: 'Works', tagLine: 'Only the finest!' },
-        { name: 'Contact', tagLine: "Don't hesitate!" }
-      ]
+      items: Constants.PORTFOLIO_SECTIONS
     }
   },
   mounted() {},
@@ -60,6 +56,10 @@ export default {
           }, 100 * index)
         })
       }
+    },
+    navigateTo(path) {
+      this.$router.push(`#${path.toLowerCase()}`)
+      this.isMenuOpen = false
     }
   }
 }
@@ -70,7 +70,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 9;
   width: 100%;
   height: 100%;
   .close {
@@ -95,6 +95,7 @@ export default {
     li {
       flex-basis: 20%;
       cursor: pointer;
+      height: 100vh;
 
       &:nth-of-type(1) {
         background-color: #111111;
@@ -138,7 +139,7 @@ export default {
 }
 .menu {
   height: 1.5rem;
-  padding: 0 0.8rem;
+  margin: 1.5rem 1.5rem 0;
   cursor: pointer;
 }
 </style>
