@@ -1,43 +1,55 @@
 <template>
-  <v-container
-    id="home"
-    v-waypoint="{ active: true, callback: onWaypoint }"
-    fluid
-    class="text-center home"
+  <v-parallax
+    height="100vh"
+    :src="require('@/assets/images/dark-background.png')"
+    alt="Banner"
   >
-    <Header />
-    <div class="banner-wrapper">
-      <div class="banner d-flex justify-center align-center rellax flex-column">
-        <div class="banner-text">Hi, I am</div>
-        <div class="full-name">Kousika Ganesan</div>
-        <vue-typed-js
-          class="justify-center"
-          :strings="['Full stack developer', 'Tech enthusiast', 'Auto pilot']"
+    <v-container
+      id="home"
+      v-waypoint="{ active: true, callback: onWaypoint }"
+      fluid
+      class="text-center home"
+    >
+      <!-- <Header /> -->
+      <div class="banner-wrapper">
+        <div
+          class="banner d-flex justify-center align-center rellax flex-column"
         >
-          <div class="sub-text">
-            I'm a <span class="typing font-weight-bold"></span>
-          </div>
-        </vue-typed-js>
+          <div class="banner-text">Hi, I am</div>
+          <div class="full-name">Kousika Ganesan</div>
+          <vue-typed-js
+            class="justify-center"
+            :strings="[
+              'Full stack developer',
+              'Javascript enthusiast',
+              'Avid learner'
+            ]"
+          >
+            <div class="sub-text">
+              I'm a <span class="typing font-weight-bold"></span>
+            </div>
+          </vue-typed-js>
+        </div>
+        <div class="scroll-gif"><img src="@/assets/images/scroll.gif" /></div>
       </div>
-      <div class="scroll-gif"><img src="@/assets/images/scroll.gif" /></div>
-    </div>
-  </v-container>
+    </v-container>
+  </v-parallax>
 </template>
 
 <script>
-import Header from '@/components/Header'
+// import Header from '@/components/Header'
 export default {
   components: {
-    Header
+    // Header
   },
   methods: {
-    onWaypoint({ going }) {
-      if (going === this.$waypointMap.GOING_IN) {
-        this.$nextTick(() => {
-          this.$scrollTo('#home', { easing: 'ease-in' })
-        })
-      }
-    }
+    // onWaypoint({ going }) {
+    //   if (going === this.$waypointMap.GOING_IN) {
+    //     this.$nextTick(() => {
+    //       this.$scrollTo('#home', { easing: 'ease-in' })
+    //     })
+    //   }
+    // }
   }
 }
 </script>
@@ -78,7 +90,14 @@ export default {
   }
   .banner-wrapper {
     position: relative;
-    height: calc(100% - 9rem);
+    // height: calc(100% - 9rem);
+    height: 100%;
+  }
+  @media screen and (max-width: 767px) {
+    .full-name {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
   }
 }
 </style>

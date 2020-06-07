@@ -6,8 +6,16 @@
   margin: 2rem 0;
   font-size: 4rem;
   text-align: center;
+  color: #02f3e6;
 }
 
 .container {
     padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }

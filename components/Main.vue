@@ -1,27 +1,28 @@
 <template>
   <v-container fluid>
-    <v-navigation-drawer
-      fixed
-      mini-variant
-      permanent
-      floating
-      class="navigation"
-    >
-      <Navigation v-if="showMenu" />
-    </v-navigation-drawer>
-    <div class="portfolio-content">
-      <Home v-waypoint="{ active: true, callback: onWaypoint }" />
-      <About data-aos="fade-up" data-aos-duration="1000" />
-      <Skills data-aos="fade-up" data-aos-duration="1000" />
-      <Works data-aos="fade-up" data-aos-duration="1000" />
-      <Contact data-aos="fade-up" data-aos-duration="1000" />
-    </div>
+    <Home />
+    <About />
+    <Skills />
+    <Works />
+    <Contact />
+    <!-- <div class="wrapper">
+      <v-navigation-drawer
+        absolute
+        mini-variant
+        permanent
+        floating
+        class="navigation"
+      >
+        <Navigation />
+      </v-navigation-drawer>
+      <div class="portfolio-content">
+      </div>
+    </div> -->
   </v-container>
 </template>
 
 <script>
-// import Rellax from 'rellax'
-import Navigation from '@/components/Navigation'
+// import Navigation from '@/components/Navigation'
 import Home from '@/components/Home'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
@@ -30,7 +31,7 @@ import Contact from '@/components/Contact'
 
 export default {
   components: {
-    Navigation,
+    // Navigation,
     Home,
     About,
     Skills,
@@ -41,15 +42,6 @@ export default {
     return {
       showMenu: false
     }
-  },
-  mounted() {
-    // eslint-disable-next-line no-unused-vars
-    // const rellax = new Rellax('.rellax')
-  },
-  methods: {
-    onWaypoint({ going, direction }) {
-      this.showMenu = going === this.$waypointMap.GOING_OUT
-    }
   }
 }
 </script>
@@ -59,6 +51,12 @@ export default {
   background-color: #232020;
 }
 .portfolio-content {
-  margin-left: 56px;
+  // margin-left: 56px;
+  // overflow-y: scroll;
+  background-color: #232020;
+  height: 100vh;
+}
+.wrapper {
+  position: relative;
 }
 </style>

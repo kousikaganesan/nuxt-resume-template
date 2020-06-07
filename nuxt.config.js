@@ -29,7 +29,12 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loadingIndicator: {
+    name: 'rectangle-bounce',
+    color: '#02f3e6',
+    background: '#232020'
+  },
+
   /*
    ** Global CSS
    */
