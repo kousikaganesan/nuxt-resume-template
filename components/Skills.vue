@@ -1,7 +1,7 @@
 <template>
-  <v-container id="skills" fluid class="skills">
+  <v-container id="skills" fluid class="skills portfolio-container">
     <div>
-      <div class="section-title">Skills</div>
+      <div class="section-title">What I do</div>
       <v-row no-gutters>
         <v-col class="text-center px-4" cols="12" sm="4">
           <img src="@/assets/images/frontend.png" />
@@ -28,19 +28,12 @@
           </div>
         </v-col>
       </v-row>
-      <Hireme />
     </div>
   </v-container>
 </template>
 
 <script>
-import Hireme from '@/components/Hireme'
-
-export default {
-  components: {
-    Hireme
-  }
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>

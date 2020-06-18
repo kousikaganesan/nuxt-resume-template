@@ -24,6 +24,11 @@ export default {
         href:
           'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap'
       }
+    ],
+    script: [
+      {
+        src: 'drift.min.js'
+      }
     ]
   },
   /*

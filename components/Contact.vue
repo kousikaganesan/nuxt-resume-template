@@ -1,6 +1,6 @@
 <template>
-  <v-container id="contact" fluid class="contact">
-    <div class="section-title">contact</div>
+  <v-container id="contact" fluid class="contact portfolio-container">
+    <div class="section-title">Contact</div>
     <v-row no-gutters class="social-media">
       <v-col
         v-for="item in socialLinks"
@@ -17,17 +17,6 @@
     </v-row>
     <div class="footer">
       <div class="copyright">© 2020 Kousika Ganesan</div>
-
-      <div class="copyright">
-        Icons made by
-        <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols"
-          >Prosymbols</a
-        >
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-      </div>
     </div>
   </v-container>
 </template>

@@ -4,12 +4,8 @@
     :src="require('@/assets/images/dark-background.png')"
     alt="Banner"
   >
-    <v-container
-      id="home"
-      v-waypoint="{ active: true, callback: onWaypoint }"
-      fluid
-      class="text-center home"
-    >
+    <!-- TODO: add v-waypoint="{ active: true, callback: onWaypoint }" -->
+    <v-container id="home" fluid class="text-center home">
       <!-- <Header /> -->
       <div class="banner-wrapper">
         <div

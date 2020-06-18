@@ -1,14 +1,17 @@
 <template>
-  <v-container
-    v-waypoint="{ active: true, callback: onWaypoint }"
-    fluid
-    class="about"
-  >
-    <div id="about">
-      <div class="section-title">About</div>
+  <!-- TODO: add v-waypoint="{ active: true, callback: onWaypoint }" -->
+  <v-container fluid class="about portfolio-container">
+    <div id="about" class="px-4">
+      <div class="section-title">About me</div>
+      <div class="quotes text-center">
+        <q>
+          If you are working on something exciting that you really care about,
+          you don't have to be pushed. The vision pulls you.
+        </q>
+      </div>
       <v-row no-gutters class="content">
         <v-col cols="12" md="6">
-          Hi
+          Hi,
           <div class="d-flex justify-center follow-section">
             <a
               class="linkedin"
@@ -34,7 +37,7 @@
           </div>
         </v-col>
         <v-col cols="12" md="6">
-          <img class="illustration" src="@/assets/images/coder.svg" />
+          <img class="illustration" src="@/assets/images/skill.png" />
         </v-col>
       </v-row>
     </div>
@@ -63,6 +66,11 @@ export default {
   }
   .content {
     padding: 3rem;
+  }
+  .quotes {
+    margin: 2rem auto;
+    font-size: 2rem;
+    max-width: 50rem;
   }
   .follow-section {
     margin-top: 2rem;

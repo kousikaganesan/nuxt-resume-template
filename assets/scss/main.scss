@@ -1,8 +1,7 @@
 @import '~/assets/scss/_variables.scss';
 
 .section-title {
-  font-weight: 800;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   margin: 2rem 0;
   font-size: 4rem;
   text-align: center;
@@ -11,6 +10,11 @@
 
 .container {
     padding: 0;
+}
+
+.portfolio-container {
+  max-width: 64rem;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {

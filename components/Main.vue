@@ -3,6 +3,7 @@
     <Home />
     <About />
     <Skills />
+    <Hireme />
     <Works />
     <Contact />
     <!-- <div class="wrapper">
@@ -28,6 +29,7 @@ import About from '@/components/About'
 import Skills from '@/components/Skills'
 import Works from '@/components/Works'
 import Contact from '@/components/Contact'
+import Hireme from '@/components/Hireme'
 
 export default {
   components: {
@@ -36,7 +38,8 @@ export default {
     About,
     Skills,
     Works,
-    Contact
+    Contact,
+    Hireme
   },
   data() {
     return {

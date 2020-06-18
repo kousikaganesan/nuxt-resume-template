@@ -4,8 +4,8 @@
     :src="require('@/assets/images/hire-me.jpg')"
     alt="Hire me"
   >
-    <div class="d-flex hire-me px-4">
-      <div class="content d-flex flex-wrap">
+    <div class="d-flex hire-me px-4 portfolio-container">
+      <div class="content">
         <div class="help">
           I'm open for collaborating for your upcoming projects!
         </div>
@@ -40,22 +40,9 @@ export default {
 }
 
 .hire-me {
-  .content {
-    flex-basis: 70%;
-  }
   .help {
     font-size: 1.5em;
-    margin-right: 1rem;
-  }
-  @media screen and (max-width: 768px) {
-    .content {
-      flex-basis: 100%;
-      justify-content: center;
-    }
-    .help {
-      margin-bottom: 1rem;
-      text-align: center;
-    }
+    margin-bottom: 1rem;
   }
 }
 </style>
