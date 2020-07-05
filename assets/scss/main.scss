@@ -1,5 +1,9 @@
 @import '~/assets/scss/_variables.scss';
 
+html, body {
+  background: black;
+}
+
 .section-title {
   // text-transform: uppercase;
   margin: 2rem 0;

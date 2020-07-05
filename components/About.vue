@@ -11,7 +11,11 @@
       </div>
       <v-row no-gutters class="content">
         <v-col cols="12" md="6">
-          Hi,
+          Hi, I'm a Full stack developer specialized in both frontend and
+          backend development for building complex scalable web apps. I’ve
+          always sought out opportunities and challenges that are meaningful to
+          me. Over the past 3 years, I have collaborated with some incredible
+          teams and involved in all stages of software development life cycle.
           <div class="d-flex justify-center follow-section">
             <a
               class="linkedin"
@@ -37,7 +41,35 @@
           </div>
         </v-col>
         <v-col cols="12" md="6">
-          <img class="illustration" src="@/assets/images/skill.png" />
+          <!-- <img class="illustration" src="@/assets/images/skill.png" /> -->
+          <v-progress-linear
+            class="mb-5"
+            rounded
+            height="20"
+            active
+            value="25"
+          />
+          <v-progress-linear
+            class="mb-5"
+            rounded
+            height="20"
+            active
+            value="50"
+          />
+          <v-progress-linear
+            class="mb-5"
+            rounded
+            height="20"
+            active
+            value="53"
+          />
+          <v-progress-linear
+            class="mb-5"
+            rounded
+            height="20"
+            active
+            value="70"
+          />
         </v-col>
       </v-row>
     </div>

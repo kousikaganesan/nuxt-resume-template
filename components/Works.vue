@@ -9,19 +9,22 @@
         under Squashapps pvt ltd and hence the name cannot be revealed. So, here
         are my recent project's one liners and my contribution to the project.
       </div> -->
-      <v-card class="mx-auto" max-width="300" dark elevation="24">
-        <v-img
-          class="white--text align-end"
-          height="300px"
-          :src="require('@/assets/images/covid.png')"
+      <v-row>
+        <v-col
+          v-for="(project, index) in projects"
+          :key="index"
+          cols="12"
+          sm="3"
         >
-          <v-card-text class="text--primary">
-            <div>COVID-19 Tracker</div>
-            <div>Tech stack: React JS</div>
-          </v-card-text>
-        </v-img>
-      </v-card>
-      <v-row no-gutters class="work-trai">
+          <Project :project="project" />
+        </v-col>
+      </v-row>
+      <div class="text-center pa-4 ma-4">
+        <v-btn color="white" :href="moreProjects" target="_blank" outlined dark>
+          View more
+        </v-btn>
+      </div>
+      <v-row no-gutters class="work-traits">
         <v-col class="text-center px-4" cols="12" sm="4">
           <img class="work-img" src="@/assets/images/paint-roller.png" />
           <div class="work-title">Tailored to your needs</div>
@@ -41,7 +44,20 @@
 </template>
 
 <script>
-export default {}
+import Project from '@/components/Project'
+import Constants from '@/constants'
+
+export default {
+  components: {
+    Project
+  },
+  data() {
+    return {
+      projects: Constants.PROJECTS,
+      moreProjects: Constants.GITHUB_LINK
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -60,6 +76,9 @@ export default {}
     font-size: 1.3rem;
     line-height: 2rem;
     margin-bottom: 2rem;
+  }
+  .work-traits {
+    margin-top: 5rem;
   }
 }
 </style>

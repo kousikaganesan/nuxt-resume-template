@@ -27,7 +27,7 @@ export default {
     ],
     script: [
       {
-        src: 'drift.min.js'
+        // src: 'drift.min.js'
       }
     ]
   },
