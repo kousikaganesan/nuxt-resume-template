@@ -1,5 +1,5 @@
 <template>
-  <v-app :style="{ background: $vuetify.theme.themes.dark.background }">
+  <v-app dark>
     <nuxt />
   </v-app>
 </template>
@@ -13,7 +13,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 #app {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Biko', sans-serif;
   ::-webkit-scrollbar {
     width: 0px;
     background: transparent;

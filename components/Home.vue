@@ -15,6 +15,9 @@
           <div class="full-name">Kousika Ganesan</div>
           <vue-typed-js
             class="justify-center"
+            :loop="true"
+            :type-speed="35"
+            :back-speed="35"
             :strings="[
               'Full stack developer',
               'Javascript enthusiast',

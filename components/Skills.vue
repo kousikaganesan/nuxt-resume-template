@@ -47,6 +47,8 @@ export default {}
   }
   .skill-description {
     margin-bottom: 3rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
   }
 }
 </style>

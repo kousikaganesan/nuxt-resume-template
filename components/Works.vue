@@ -14,7 +14,7 @@
           v-for="(project, index) in projects"
           :key="index"
           cols="12"
-          sm="3"
+          sm="4"
         >
           <Project :project="project" />
         </v-col>
@@ -24,7 +24,7 @@
           View more
         </v-btn>
       </div>
-      <v-row no-gutters class="work-traits">
+      <!-- <v-row no-gutters class="work-traits">
         <v-col class="text-center px-4" cols="12" sm="4">
           <img class="work-img" src="@/assets/images/paint-roller.png" />
           <div class="work-title">Tailored to your needs</div>
@@ -37,8 +37,7 @@
           <img class="work-img" src="@/assets/images/like.png" />
           <div class="work-title">Built with love</div>
         </v-col>
-      </v-row>
-      <div class="works-description"></div>
+      </v-row> -->
     </div>
   </v-container>
 </template>

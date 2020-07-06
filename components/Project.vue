@@ -19,7 +19,7 @@
               large
               color="black"
               elevation="0"
-              @click="viewProject"
+              @click="toggleModal"
             >
               View Project
             </v-btn>
@@ -36,21 +36,45 @@
         max-width="500"
       >
         <v-card class="project-modal">
-          <div class="close-btn" @click="closeModal">
+          <div class="close-btn" @click="toggleModal">
             <v-icon>mdi-close</v-icon>
           </div>
           <v-img
-            height="250"
+            height="200"
+            cover
             :src="require(`@/assets/images/${project.cover}`)"
           ></v-img>
-          <v-card-title>{{ project.title }}</v-card-title>
+          <v-card-title>{{ project.title }} </v-card-title>
           <v-card-text>
-            <div class="pb-4">
-              This project comes under Squashapps pvt ltd and hence the name is
-              confidential. So, here is the project's one liners and my
-              contribution to the project.
+            <p>
+              <v-chip
+                v-for="tech in project.techStack"
+                :key="tech"
+                small
+                class="mr-2"
+                label
+              >
+                {{ tech }}
+              </v-chip>
+            </p>
+            <p>{{ project.description }}</p>
+            <div v-if="project.isConfidential" class="pb-4">
+              This project comes under Squashapps pvt ltd and hence its name is
+              confidential.
             </div>
-            {{ project.description }}
+            <v-btn
+              class="my-2 view-project"
+              depressed
+              rounded
+              large
+              color="black"
+              elevation="0"
+              :disabled="!project.url"
+              @click="viewProject"
+            >
+              <v-icon v-if="project.isConfidential" left>mdi-lock</v-icon>
+              View code
+            </v-btn>
           </v-card-text>
         </v-card>
       </v-dialog>
@@ -73,14 +97,12 @@ export default {
   },
   methods: {
     viewProject() {
-      if (this.project.isConfidential) {
-        this.dialog = true
-      } else {
+      if (this.project.url) {
         window.open(this.project.url, '_blank')
       }
     },
-    closeModal() {
-      this.dialog = false
+    toggleModal() {
+      this.dialog = !this.dialog
     }
   }
 }
@@ -112,6 +134,9 @@ export default {
   background: #323030;
   position: relative;
 }
+.title {
+  height: 3.25rem;
+}
 .close-btn {
   position: absolute;
   right: 1rem;
@@ -123,8 +148,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  &:hover {
-    background-color: #323030;
-  }
+  background-color: #323030;
 }
 </style>

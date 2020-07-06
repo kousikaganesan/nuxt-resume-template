@@ -17,14 +17,7 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap'
-      }
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
         // src: 'drift.min.js'
@@ -43,7 +36,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['aos/dist/aos.css'],
+  css: ['aos/dist/aos.css', '~/assets/font/biko.css'],
   /*
    ** Plugins to load before mounting the App
    */

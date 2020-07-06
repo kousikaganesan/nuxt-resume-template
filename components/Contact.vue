@@ -10,7 +10,7 @@
         sm="6"
         md="4"
       >
-        <a class="background" :href="item.link" target="_blank">
+        <a class="card-background" :href="item.link" target="_blank">
           <div class="card">{{ item.name }}</div>
         </a>
       </v-col>
@@ -47,8 +47,8 @@ export default {
     margin: 0 2rem;
     // max-height: 30rem;
 
-    .background {
-      background: #262626;
+    .card-background {
+      // background: #0000;
       height: 100%;
       width: 100%;
       display: flex;
@@ -58,7 +58,7 @@ export default {
     }
 
     .card {
-      background: #232020;
+      // background: #232020;
       margin: auto;
       height: 100%;
       width: 100%;
@@ -66,8 +66,7 @@ export default {
       font-size: 18px;
       font-weight: 500;
       border-radius: 10px;
-      box-shadow: #262626 0px 0px 2px 2px, #000000 4px 4px 8px,
-        #4d4d4d -4px -4px 8px;
+      border: 2px solid #ffffff;
     }
   }
 

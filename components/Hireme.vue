@@ -4,14 +4,22 @@
     :src="require('@/assets/images/hire-me.jpg')"
     alt="Hire me"
   >
-    <div class="d-flex hire-me px-4 portfolio-container">
+    <div class="d-flex hire-me px-4 hire-me-content">
       <div class="content">
         <div class="help">
           I'm open for collaborating for your upcoming projects!
         </div>
-        <v-btn color="white" :href="mail" target="_blank" outlined dark
-          >Hire me</v-btn
+        <v-btn
+          class="ma-2"
+          rounded
+          large
+          color="black"
+          elevation="0"
+          :href="mail"
+          target="_blank"
         >
+          Hire me
+        </v-btn>
       </div>
     </div>
   </v-parallax>
@@ -38,11 +46,20 @@ export default {
   background-color: #2320204a;
   padding: 0 !important;
 }
-
+.hire-me-content {
+  margin-left: 20%;
+}
 .hire-me {
   .help {
+    text-align: left;
     font-size: 1.5em;
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hire-me-content {
+    margin-left: 0 !important;
   }
 }
 </style>

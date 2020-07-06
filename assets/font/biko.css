@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Biko;
+    src: url("../font/Biko_Regular.otf");
+  }
+
+  
+  html {
+    font-family: Biko;
+    font-size: 16px;
+    background-color: black;
+  }
+
+
+  
