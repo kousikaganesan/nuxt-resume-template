@@ -55,7 +55,7 @@
           </div>
         </v-col>
         <v-col cols="12" md="6">
-          <div class="px-10">
+          <div class="px-10 skills-percentage">
             <v-progress-linear
               v-for="skill in skills"
               :key="skill.name"
@@ -154,6 +154,12 @@ export default {
   ::v-deep .v-progress-linear__content {
     justify-content: start;
     font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills-percentage {
+    margin-top: 2rem;
   }
 }
 </style>

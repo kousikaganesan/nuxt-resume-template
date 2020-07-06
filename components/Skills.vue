@@ -2,7 +2,7 @@
   <v-container id="skills" fluid class="skills portfolio-container">
     <div>
       <div class="section-title">What I do</div>
-      <v-row no-gutters>
+      <v-row no-gutters class="px-5">
         <v-col class="text-center px-4" cols="12" sm="4">
           <img src="@/assets/images/frontend.png" />
           <div class="skill-title">Frontend</div>

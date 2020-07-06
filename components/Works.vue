@@ -9,7 +9,7 @@
         under Squashapps pvt ltd and hence the name cannot be revealed. So, here
         are my recent project's one liners and my contribution to the project.
       </div> -->
-      <v-row>
+      <v-row class="px-5">
         <v-col
           v-for="(project, index) in projects"
           :key="index"
