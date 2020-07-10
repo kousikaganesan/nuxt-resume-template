@@ -81,7 +81,7 @@ export default {
       description:
         'This is the initial version of portfolio to display my work. Developed this project in a short span of time. I have planned to add more sections and micro interactions in the future',
       isConfidential: false,
-      url: 'https://github.com/kousikaganesan/kousikaganesan.github.io'
+      url: 'https://github.com/kousikaganesan/nuxt-resume-template'
     },
     {
       title: 'A Productive App',
