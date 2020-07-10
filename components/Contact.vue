@@ -1,60 +1,80 @@
 <template>
-  <v-container id="contact" fluid class="contact">
-    <div class="section-title">contact</div>
-    <v-row no-gutters>
-      <v-col class="contact-item" cols="4">
-        <div class="contact-card">
-          Linked In
-        </div>
-      </v-col>
-      <v-col class="contact-item" cols="4">
-        <div class="contact-card">
-          Stackoverflow
-        </div>
-      </v-col>
-      <v-col class="contact-item" cols="4">
-        <div class="contact-card">
-          Medium
-        </div>
-      </v-col>
-      <v-col class="contact-item" cols="4">
-        <div class="contact-card">
-          Github
-        </div>
-      </v-col>
-      <v-col class="contact-item" cols="4">
-        <div class="contact-card">
-          Twitter
-        </div>
-      </v-col>
-      <v-col class="contact-item" cols="4">
-        <div class="contact-card">
-          Email
-        </div>
+  <v-container id="contact" fluid class="contact portfolio-container">
+    <div class="section-title">Contact</div>
+    <v-row no-gutters class="social-media">
+      <v-col
+        v-for="item in socialLinks"
+        :key="item.name"
+        class="contact-item"
+        cols="12"
+        sm="6"
+        md="4"
+      >
+        <a class="card-background" :href="item.link" target="_blank">
+          <div class="card">{{ item.name }}</div>
+        </a>
       </v-col>
     </v-row>
+    <div class="footer">
+      <div class="copyright">© 2020 Kousika Ganesan</div>
+    </div>
   </v-container>
 </template>
 
 <script>
-export default {}
+import Constants from '@/constants'
+
+export default {
+  data() {
+    return {
+      socialLinks: Constants.SOCIAL_LINKS
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 .contact {
-  height: 100vh;
-  color: white;
   margin-top: 3rem;
-  .contact-item {
-    text-align: center;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
 
-    .contact-card {
-      padding: 3rem;
+  .copyright {
+    color: grey;
+  }
+
+  .social-media {
+    margin: 0 2rem;
+
+    .card-background {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      padding: 1rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .card {
+      margin: auto;
+      height: 100%;
+      width: 100%;
+      padding: 2rem;
+      font-size: 18px;
+      font-weight: 500;
       border-radius: 10px;
-      background: linear-gradient(145deg, #252222, #201d1d);
-      box-shadow: 6px 6px 10px rgba(13, 13, 13, 0.25),
-        6px 6px 10px rgba(48, 48, 48, 0.25);
+      border: 2px solid #ffffff;
+    }
+  }
+
+  .footer {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    .card {
+      padding: 1rem !important;
     }
   }
 }

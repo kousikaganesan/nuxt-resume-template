@@ -90,6 +90,7 @@ export default {
 
     .name {
       letter-spacing: 4px;
+      color: white;
     }
 
     li {
@@ -123,6 +124,7 @@ export default {
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s 0.5s, opacity 0.5s linear;
+        color: white;
       }
       &:hover {
         .tag {

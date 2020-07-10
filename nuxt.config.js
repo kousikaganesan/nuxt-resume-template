@@ -17,23 +17,26 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
       {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap'
+        // src: 'drift.min.js'
       }
     ]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loadingIndicator: {
+    name: 'rectangle-bounce',
+    color: '#02f3e6',
+    background: '#232020'
+  },
+
   /*
    ** Global CSS
    */
-  css: ['aos/dist/aos.css'],
+  css: ['aos/dist/aos.css', '~/assets/font/biko.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -87,6 +90,11 @@ export default {
           background: '#232020'
         }
       }
+    }
+  },
+  pwa: {
+    manifest: {
+      name: 'Kousika Ganesan'
     }
   },
   /*

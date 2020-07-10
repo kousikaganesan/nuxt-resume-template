@@ -1,13 +1,29 @@
 @import '~/assets/scss/_variables.scss';
 
+html, body {
+  background: black;
+}
+
 .section-title {
-  font-weight: 800;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   margin: 2rem 0;
   font-size: 4rem;
   text-align: center;
+  color: #02f3e6;
 }
 
 .container {
     padding: 0;
+}
+
+.portfolio-container {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }
