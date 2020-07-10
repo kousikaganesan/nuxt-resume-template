@@ -61,8 +61,6 @@ export default {
 
 <style lang="scss" scoped>
 .works {
-  // color: white;
-  // margin-top: 3rem;
   .work-img {
     height: 6rem;
   }

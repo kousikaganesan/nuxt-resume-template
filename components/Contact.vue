@@ -45,10 +45,8 @@ export default {
 
   .social-media {
     margin: 0 2rem;
-    // max-height: 30rem;
 
     .card-background {
-      // background: #0000;
       height: 100%;
       width: 100%;
       display: flex;
@@ -58,7 +56,6 @@ export default {
     }
 
     .card {
-      // background: #232020;
       margin: auto;
       height: 100%;
       width: 100%;

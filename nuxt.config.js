@@ -92,6 +92,11 @@ export default {
       }
     }
   },
+  pwa: {
+    manifest: {
+      name: 'Kousika Ganesan'
+    }
+  },
   /*
    ** Build configuration
    */

@@ -26,9 +26,6 @@
           <p>
             I also love to sketch and do crafts. These skills made me believe in
             "A problem visualized is a problem halved."
-            <!-- . My
-            interests in creating things and obsessive eye for detail have paved
-            way to learn and develop apps in perspective of UI and UX. -->
           </p>
           <div class="d-flex justify-center follow-section">
             <a
@@ -83,15 +80,6 @@ export default {
     return {
       skills: Constants.SKILLS
     }
-  },
-  methods: {
-    // onWaypoint({ going }) {
-    //   if (going === this.$waypointMap.GOING_IN) {
-    //     this.$nextTick(() => {
-    //       this.$scrollTo('#about', { easing: 'ease-in' })
-    //     })
-    //   }
-    // }
   }
 }
 </script>

@@ -7,7 +7,7 @@
     <div class="d-flex hire-me px-4 hire-me-content">
       <div class="content">
         <div class="help">
-          I'm open for collaborating for your upcoming projects!
+          I'm open to collaborating for your upcoming projects!
         </div>
         <v-btn
           class="ma-2"

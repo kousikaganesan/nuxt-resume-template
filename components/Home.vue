@@ -6,7 +6,6 @@
   >
     <!-- TODO: add v-waypoint="{ active: true, callback: onWaypoint }" -->
     <v-container id="home" fluid class="text-center home">
-      <!-- <Header /> -->
       <div class="banner-wrapper">
         <div
           class="banner d-flex justify-center align-center rellax flex-column"
@@ -36,21 +35,7 @@
 </template>
 
 <script>
-// import Header from '@/components/Header'
-export default {
-  components: {
-    // Header
-  },
-  methods: {
-    // onWaypoint({ going }) {
-    //   if (going === this.$waypointMap.GOING_IN) {
-    //     this.$nextTick(() => {
-    //       this.$scrollTo('#home', { easing: 'ease-in' })
-    //     })
-    //   }
-    // }
-  }
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
@@ -65,9 +50,8 @@ export default {
     margin-bottom: 1rem;
   }
   .scroll-gif {
-    height: 6rem;
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     width: 100%;
     img {
       height: 5.625rem;
@@ -89,7 +73,6 @@ export default {
   }
   .banner-wrapper {
     position: relative;
-    // height: calc(100% - 9rem);
     height: 100%;
   }
   @media screen and (max-width: 767px) {

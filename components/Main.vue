@@ -6,24 +6,10 @@
     <Hireme />
     <Works />
     <Contact />
-    <!-- <div class="wrapper">
-      <v-navigation-drawer
-        absolute
-        mini-variant
-        permanent
-        floating
-        class="navigation"
-      >
-        <Navigation />
-      </v-navigation-drawer>
-      <div class="portfolio-content">
-      </div>
-    </div> -->
   </v-container>
 </template>
 
 <script>
-// import Navigation from '@/components/Navigation'
 import Home from '@/components/Home'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
@@ -33,7 +19,6 @@ import Hireme from '@/components/Hireme'
 
 export default {
   components: {
-    // Navigation,
     Home,
     About,
     Skills,
@@ -54,8 +39,6 @@ export default {
   background-color: #232020;
 }
 .portfolio-content {
-  // margin-left: 56px;
-  // overflow-y: scroll;
   background-color: #232020;
   height: 100vh;
 }
