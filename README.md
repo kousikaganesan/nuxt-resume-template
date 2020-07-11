@@ -10,7 +10,7 @@
 
 <p align="center">
    <a href="#">
-      <img src="https://user-images.githubusercontent.com/20679183/87132472-913f4a00-c2b3-11ea-9794-79161912d3aa.png">
+      <img src="https://user-images.githubusercontent.com/20679183/87231369-4d903180-c3d4-11ea-80b3-5fb017bb973d.png">
    </a>
 </p>
 
