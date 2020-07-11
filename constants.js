@@ -77,7 +77,7 @@ export default {
     {
       title: 'My Portfolio',
       techStack: ['Nuxt JS'],
-      cover: 'portfolio.png',
+      cover: 'portfolio-design.png',
       description:
         'This is the initial version of portfolio to display my work. Developed this project in a short span of time. I have planned to add more sections and micro interactions in the future',
       isConfidential: false,
