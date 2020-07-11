@@ -4,7 +4,7 @@
       <div class="section-title">What I do</div>
       <v-row no-gutters class="px-5">
         <v-col class="text-center px-4" cols="12" sm="4">
-          <img src="@/assets/images/frontend.png" />
+          <img class="skill-img" src="@/assets/images/frontend.png" />
           <div class="skill-title">Frontend</div>
           <div class="skill-description">
             Build responsive and cross browser efficient websites by providing
@@ -12,7 +12,7 @@
           </div>
         </v-col>
         <v-col class="text-center px-4" cols="12" sm="4">
-          <img src="@/assets/images/backend.png" />
+          <img class="skill-img" src="@/assets/images/backend.png" />
           <div class="skill-title">Backend</div>
           <div class="skill-description">
             Maintaining servers including database administration as well as
@@ -20,7 +20,7 @@
           </div>
         </v-col>
         <v-col class="text-center px-4" cols="12" sm="4">
-          <img src="@/assets/images/mobileapp.png" />
+          <img class="skill-img" src="@/assets/images/mobileapp.png" />
           <div class="skill-title">Hybrid mobile app</div>
           <div class="skill-description">
             Build easily maintainable mobile apps that run on Android, IOS and
@@ -46,9 +46,13 @@ export default {}
     margin: 1rem 0;
   }
   .skill-description {
-    margin-bottom: 3rem;
-    font-size: 1.3rem;
+    margin-bottom: 3.5rem;
+    font-size: 1rem;
     line-height: 1.5rem;
+    color: #f5f5f7;
+  }
+  .skill-img {
+    height: 7rem;
   }
 }
 </style>

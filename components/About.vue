@@ -58,7 +58,7 @@
               :key="skill.name"
               rounded
               class="mb-5"
-              height="30"
+              height="25"
               width="50%"
               color="#7e7e7e"
               active

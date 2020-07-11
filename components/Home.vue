@@ -51,7 +51,7 @@ export default {}
   }
   .scroll-gif {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     width: 100%;
     img {
       height: 5.625rem;

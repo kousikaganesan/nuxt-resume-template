@@ -4,6 +4,7 @@
       <v-img
         class="white--text align-end"
         height="200px"
+        :position="project.cover === 'covid19.png' ? 'top' : 'center'"
         :src="require(`@/assets/images/${project.cover}`)"
       >
         <v-expand-transition>
@@ -42,6 +43,7 @@
           <v-img
             height="200"
             cover
+            :position="project.cover === 'covid19.png' ? 'top' : 'center'"
             :src="require(`@/assets/images/${project.cover}`)"
           ></v-img>
           <v-card-title>{{ project.title }} </v-card-title>

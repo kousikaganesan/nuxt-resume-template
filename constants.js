@@ -59,7 +59,7 @@ export default {
       title: 'COVID-19 Tracker',
       isConfidential: false,
       techStack: ['React JS', 'Redux'],
-      cover: 'covid.png',
+      cover: 'covid19.png',
       description:
         'A real time application to track the COVID-19 cases around the world. I designed and developed this application as an open source contribution',
       url: 'https://github.com/kousikaganesan/covid-19-tracker'
