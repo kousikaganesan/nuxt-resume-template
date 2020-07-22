@@ -33,8 +33,11 @@
               title="Connect to Kousika Ganesan on Linkedin"
               href="https://in.linkedin.com/in/kousika-ganesan"
             >
-              <img class="logo" src="@/assets/images/linkedin.png" />Kousika
-              Ganesan
+              <img
+                alt="logo"
+                class="logo"
+                src="@/assets/images/linkedin.png"
+              />Kousika Ganesan
             </a>
             <div>
               <a

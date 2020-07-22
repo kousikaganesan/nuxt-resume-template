@@ -4,6 +4,7 @@
       <v-img
         class="white--text align-end"
         height="200px"
+        :alt="project.title"
         :position="project.cover === 'covid19.png' ? 'top' : 'center'"
         :src="require(`@/assets/images/${project.cover}`)"
       >
@@ -43,6 +44,7 @@
           <v-img
             height="200"
             cover
+            :alt="project.title"
             :position="project.cover === 'covid19.png' ? 'top' : 'center'"
             :src="require(`@/assets/images/${project.cover}`)"
           ></v-img>

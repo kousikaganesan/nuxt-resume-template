@@ -4,6 +4,7 @@
       <img
         v-if="data.length === 5"
         class="close"
+        alt="toggle"
         data-aos="slide-right"
         src="@/assets/images/close.svg"
         @click="toggleMenu"
@@ -25,6 +26,7 @@
     <div v-else class="d-flex justify-end">
       <img
         class="menu"
+        alt="menu"
         data-aos="fade"
         src="@/assets/images/menu.svg"
         @click="toggleMenu"

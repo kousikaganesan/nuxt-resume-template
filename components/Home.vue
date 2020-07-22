@@ -28,7 +28,9 @@
             </div>
           </vue-typed-js>
         </div>
-        <div class="scroll-gif"><img src="@/assets/images/scroll.gif" /></div>
+        <div class="scroll-gif">
+          <img alt="scroll" src="@/assets/images/scroll.gif" />
+        </div>
       </div>
     </v-container>
   </v-parallax>
