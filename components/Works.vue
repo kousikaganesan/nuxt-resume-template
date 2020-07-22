@@ -26,15 +26,15 @@
       </div>
       <!-- <v-row no-gutters class="work-traits">
         <v-col class="text-center px-4" cols="12" sm="4">
-          <img class="work-img" src="@/assets/images/paint-roller.png" />
+          <img alt="tailored" class="work-img" src="@/assets/images/paint-roller.png" />
           <div class="work-title">Tailored to your needs</div>
         </v-col>
         <v-col class="text-center px-4" cols="12" sm="4">
-          <img class="work-img" src="@/assets/images/design-tool.png" />
+          <img alt="perfect code" class="work-img" src="@/assets/images/design-tool.png" />
           <div class="work-title">Pixel perfect code</div>
         </v-col>
         <v-col class="text-center px-4" cols="12" sm="4">
-          <img class="work-img" src="@/assets/images/like.png" />
+          <img alt="built with love" class="work-img" src="@/assets/images/like.png" />
           <div class="work-title">Built with love</div>
         </v-col>
       </v-row> -->

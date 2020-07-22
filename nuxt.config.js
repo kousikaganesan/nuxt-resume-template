@@ -7,14 +7,62 @@ export default {
    */
   head: {
     titleTemplate: 'Kousika Ganesan',
-    title: 'Kousika Ganesan',
+    title: 'Kousika Ganesan - Fullstack Developer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        hid: 'description',
+        content:
+          'Experienced in the field of web and hybrid app development using JavaScript and its frameworks. Proficient in building scalable micro services as well.'
+      },
+      {
+        name: 'keywords',
+        content:
+          'Fullstack Developer, Remote Engineer, Software developer, app development'
+      },
+      {
+        name: 'og:title',
+        content: 'Kousika Ganesan - Fullstack Developer'
+      },
+      {
+        name: 'og:description',
+        content:
+          'Experienced in the field of web and hybrid app development using JavaScript and its frameworks. Proficient in building scalable micro services as well.'
+      },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:url', content: 'https://kousikaganesan.github.io/' },
+      {
+        name: 'og:image',
+        content:
+          'https://user-images.githubusercontent.com/20679183/88207143-fceac500-cc6c-11ea-8b72-54b2b8255ef7.png'
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary'
+      },
+      {
+        name: 'twitter:site',
+        content: 'Kousika Ganesan'
+      },
+      {
+        name: 'twitter:title',
+        content: 'Kousika Ganesan - Fullstack Developer'
+      },
+      {
+        name: 'twitter:description',
+        content:
+          'Experienced in the field of web and hybrid app development using JavaScript and its frameworks. Proficient in building scalable micro services as well.'
+      },
+      {
+        name: 'twitter:image',
+        content:
+          'https://user-images.githubusercontent.com/20679183/88207143-fceac500-cc6c-11ea-8b72-54b2b8255ef7.png'
+      },
+      {
+        name: 'twitter:image:alt',
+        content: 'Kousika Ganesan Logo'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
