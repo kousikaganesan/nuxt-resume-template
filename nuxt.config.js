@@ -69,6 +69,8 @@ export default {
     script: [
       {
         // src: 'drift.min.js'
+        src: 'https://platform.twitter.com/widgets.js',
+        defer: true
       }
     ]
   },
@@ -91,7 +93,8 @@ export default {
   plugins: [
     { src: '~/plugins/typed', ssr: false },
     { src: '~/plugins/aos', ssr: false },
-    { src: '~/plugins/vue-waypoint', ssr: false }
+    { src: '~/plugins/vue-waypoint', ssr: false },
+    { src: '~/plugins/carousal', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules

@@ -27,6 +27,7 @@
               I'm a <span class="typing font-weight-bold"></span>
             </div>
           </vue-typed-js>
+          <Follow />
         </div>
         <div class="scroll-gif">
           <img alt="scroll" src="@/assets/images/scroll.gif" />
@@ -37,7 +38,13 @@
 </template>
 
 <script>
-export default {}
+import Follow from '@/components/Follow'
+
+export default {
+  components: {
+    Follow
+  }
+}
 </script>
 
 <style lang="scss" scoped>

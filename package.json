@@ -29,6 +29,7 @@
     "aos": "^2.3.4",
     "nuxt": "^2.0.0",
     "rellax": "^1.12.1",
+    "vue-owl-carousel2": "^2.0.7",
     "vue-scrollto": "^2.18.1",
     "vue-typed-js": "^0.1.2",
     "vue-waypoint": "^3.4.1"
