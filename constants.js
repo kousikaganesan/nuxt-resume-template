@@ -8,36 +8,91 @@ export default {
   ],
   SKILLS: [
     {
-      name: 'Vue',
-      percentage: 90
+      name: 'set1',
+      items: [
+        {
+          name: 'Vue',
+          image: 'vue.png'
+        },
+        {
+          name: 'React',
+          image: 'react.svg'
+        },
+        {
+          name: 'Angular',
+          image: 'angular.png'
+        },
+        {
+          name: 'Ionic',
+          image: 'ionic.png'
+        },
+        {
+          name: 'Redux',
+          image: 'redux.png'
+        },
+        {
+          name: 'Nuxt',
+          image: 'nuxt.svg'
+        }
+      ]
     },
     {
-      name: 'React',
-      percentage: 80
+      name: 'set2',
+      items: [
+        {
+          name: 'Vuetify',
+          image: 'vuetify.png'
+        },
+        {
+          name: 'Ant Design',
+          image: 'antdesign.svg'
+        },
+        {
+          name: 'React Material-UI',
+          image: 'reactmaterial.png'
+        },
+        {
+          name: 'Node',
+          image: 'nodejs.webp'
+        },
+        {
+          name: 'Mongo DB',
+          image: 'mongodb.png'
+        },
+        {
+          name: 'Nginx',
+          image: 'nginx.svg'
+        }
+      ]
     },
     {
-      name: 'Angular',
-      percentage: 80
-    },
-    {
-      name: 'Ionic',
-      percentage: 85
-    },
-    {
-      name: 'React Native',
-      percentage: 50
-    },
-    {
-      name: 'Nuxt',
-      percentage: 90
-    },
-    {
-      name: 'Node',
-      percentage: 70
-    },
-    {
-      name: 'Mongo DB',
-      percentage: 70
+      name: 'set3',
+      items: [
+        {
+          name: 'Gitlab',
+          image: 'gitlab.png'
+        },
+        {
+          name: 'Github',
+          image: 'github.png'
+        },
+        {
+          name: 'Bitbucket',
+          image: 'bitbucket.svg'
+        },
+        {
+          name: 'Confluence',
+          image: 'confluence.png'
+        },
+        {
+          name: 'Jira',
+          image: 'jira.svg'
+        },
+        {
+          name: 'Trello',
+          image: 'trello.png'
+        }
+      ]
     }
   ],
   SOCIAL_LINKS: [
