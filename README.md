@@ -16,7 +16,7 @@
 
 ### 🚀 Demo
 
-https://kousikaganesan.github.io/
+http://bit.ly/kousika
 
 ### 🛠 Build Setup
 
