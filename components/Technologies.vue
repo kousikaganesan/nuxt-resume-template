@@ -44,7 +44,7 @@ export default {
   .technologies-title {
     font-size: 1.4375rem;
     font-weight: bold;
-    margin: 3rem 0;
+    margin-top: 3rem;
   }
   .technologies-logo {
     height: 3rem;

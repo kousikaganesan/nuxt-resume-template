@@ -3,17 +3,17 @@
   <v-container fluid class="about portfolio-container">
     <div id="about" class="px-4">
       <div class="section-title">About me</div>
-      <div class="mb-6 text-center">
+      <div class="mb-6 text-center" data-aos="fade-up">
         <img class="me-img" src="@/assets/images/me.jpg" />
       </div>
-      <div class="quotes text-center mb-10">
+      <div class="quotes text-center mb-10" data-aos="fade-up">
         <q>
           If you are working on something exciting that you really care about,
           you don't have to be pushed. The vision pulls you.
         </q>
         <br />
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up">
         <p>
           Hi, I'm a Full stack developer specialised in both frontend and
           backend development for building complex and scalable web apps. I’ve
@@ -26,7 +26,9 @@
           "A problem visualised is a problem halved."
         </p>
       </div>
-      <Technologies />
+      <div data-aos="fade-up">
+        <Technologies />
+      </div>
     </div>
   </v-container>
 </template>
@@ -65,6 +67,11 @@ export default {
     border-radius: 50%;
     border: 2px solid rgb(54, 51, 51);
     object-fit: cover;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content {
+    padding: 0 !important;
   }
 }
 </style>

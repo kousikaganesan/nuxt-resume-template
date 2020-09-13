@@ -1,6 +1,6 @@
 <template>
   <v-hover v-slot:default="{ hover }">
-    <v-card class="mx-auto project" max-width="300" dark elevation="24">
+    <v-card class="project" dark elevation="24" data-aos="fade-up">
       <v-img
         class="white--text align-end"
         height="200px"
@@ -115,6 +115,7 @@ export default {
 <style lang="scss" scoped>
 .project {
   cursor: pointer;
+  max-width: 300px;
 }
 .hover-content {
   height: 100%;
@@ -153,5 +154,10 @@ export default {
   align-items: center;
   justify-content: center;
   background-color: #323030;
+}
+@media screen and (max-width: 767px) {
+  .project {
+    max-width: 100% !important;
+  }
 }
 </style>

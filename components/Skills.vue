@@ -8,9 +8,10 @@
             alt="frontend"
             class="skill-img"
             src="@/assets/images/frontend.png"
+            data-aos="fade-up"
           />
-          <div class="skill-title">Frontend</div>
-          <div class="skill-description">
+          <div class="skill-title" data-aos="fade-up">Frontend</div>
+          <div class="skill-description" data-aos="fade-up">
             Build responsive and cross browser efficient websites by providing
             seamless transition from design to development
           </div>
@@ -20,9 +21,10 @@
             alt="backend"
             class="skill-img"
             src="@/assets/images/backend.png"
+            data-aos="fade-up"
           />
-          <div class="skill-title">Backend</div>
-          <div class="skill-description">
+          <div class="skill-title" data-aos="fade-up">Backend</div>
+          <div class="skill-description" data-aos="fade-up">
             Maintaining servers including database administration as well as
             scaling applications to handle load changes.
           </div>
@@ -32,9 +34,10 @@
             alt="mobileapp"
             class="skill-img"
             src="@/assets/images/mobileapp.png"
+            data-aos="fade-up"
           />
-          <div class="skill-title">Hybrid mobile app</div>
-          <div class="skill-description">
+          <div class="skill-title" data-aos="fade-up">Hybrid mobile app</div>
+          <div class="skill-description" data-aos="fade-up">
             Build easily maintainable mobile apps that run on Android, IOS and
             web with single code implementation.
           </div>

@@ -69,6 +69,35 @@ export default {
       name: 'set3',
       items: [
         {
+          name: 'React Native',
+          image: 'react.svg'
+        },
+        {
+          name: 'PM2',
+          image: 'pm2.png'
+        },
+        {
+          name: 'Wit.ai',
+          image: 'witai.png'
+        },
+        {
+          name: 'Typescript',
+          image: 'typescript.png'
+        },
+        {
+          name: 'Scss',
+          image: 'scss.png'
+        },
+        {
+          name: 'D3.js',
+          image: 'd3.png'
+        }
+      ]
+    },
+    {
+      name: 'set4',
+      items: [
+        {
           name: 'Gitlab',
           image: 'gitlab.png'
         },

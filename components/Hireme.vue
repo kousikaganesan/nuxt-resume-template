@@ -6,7 +6,7 @@
   >
     <div class="d-flex hire-me px-4 hire-me-content">
       <div class="content">
-        <div class="help">
+        <div class="help" data-aos="fade-right">
           I'm open to collaborating for your upcoming projects!
         </div>
         <v-btn
@@ -17,6 +17,7 @@
           elevation="0"
           :href="mail"
           target="_blank"
+          data-aos="fade-right"
         >
           Hire me
         </v-btn>

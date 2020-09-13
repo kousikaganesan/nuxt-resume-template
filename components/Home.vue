@@ -29,7 +29,7 @@
           </vue-typed-js>
           <Follow />
         </div>
-        <div class="scroll-gif">
+        <div class="scroll-gif" data-aos="fade-up" data-aos-duration="2000">
           <img alt="scroll" src="@/assets/images/scroll.gif" />
         </div>
       </div>

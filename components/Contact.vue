@@ -10,7 +10,12 @@
         sm="6"
         md="4"
       >
-        <a class="card-background" :href="item.link" target="_blank">
+        <a
+          class="card-background"
+          :href="item.link"
+          target="_blank"
+          data-aos="fade-up"
+        >
           <div class="card">{{ item.name }}</div>
         </a>
       </v-col>
