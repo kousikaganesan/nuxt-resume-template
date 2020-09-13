@@ -69,8 +69,6 @@ export default {
     script: [
       {
         // src: 'drift.min.js'
-        src: 'https://platform.twitter.com/widgets.js',
-        defer: true
       }
     ]
   },
@@ -80,7 +78,7 @@ export default {
   loadingIndicator: {
     name: 'rectangle-bounce',
     color: '#02f3e6',
-    background: '#232020'
+    background: '#131313'
   },
 
   /*
@@ -111,7 +109,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@neneos/nuxt-animate.css',

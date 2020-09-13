@@ -1,6 +1,8 @@
 <template>
   <div class="technologies">
-    <div class="technologies-title text-center">Technologies I 🤍</div>
+    <div class="technologies-title d-flex justify-center align-center">
+      Technologies I <img class="heart" src="@/assets/images/heart.png" />
+    </div>
     <carousel :autoplay="true" :nav="false" :loop="true" :items="1">
       <div
         v-for="skill in skills"
@@ -59,6 +61,9 @@ export default {
       background: #323030;
       border-radius: 4px;
     }
+  }
+  .heart {
+    height: 2.4375rem;
   }
 }
 </style>
