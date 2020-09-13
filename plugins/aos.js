@@ -4,5 +4,5 @@ import 'aos/dist/aos.css'
 
 export default ({ app }) => {
   // eslint-disable-next-line new-cap
-  app.AOS = new AOS.init({ disable: 'phone' })
+  app.AOS = new AOS.init()
 }
