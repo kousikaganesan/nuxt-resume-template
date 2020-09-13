@@ -27,22 +27,34 @@
               I'm a <span class="typing font-weight-bold"></span>
             </div>
           </vue-typed-js>
-          <Follow />
+          <v-btn
+            class="ma-2"
+            large
+            outlined
+            :href="mail"
+            target="_blank"
+            color="white"
+            elevation="0"
+            data-aos="fade-up"
+          >
+            Hire me
+          </v-btn>
         </div>
-        <div class="scroll-gif" data-aos="fade-up" data-aos-duration="2000">
+        <div class="scroll-gif">
           <img alt="scroll" src="@/assets/images/scroll.gif" />
         </div>
       </div>
     </v-container>
   </v-parallax>
 </template>
-
 <script>
-import Follow from '@/components/Follow'
+import Constants from '@/constants'
 
 export default {
-  components: {
-    Follow
+  data() {
+    return {
+      mail: Constants.HIRE_ME
+    }
   }
 }
 </script>
